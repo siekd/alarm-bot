@@ -12,6 +12,8 @@ bot = telegram.Bot(token=API_KEY)
 
 chat_id = '814915551'
 
+bot.sendMessage(chat_id=chat_id, text='마나모아-bot 가동합니다.')
+
 Book_mark = ['데스러버', '액터쥬(act-age)', '나의 히어로 아카데미아',\
              '원펀맨 리메이크', '전생현자의 이세계 라이프',\
              '호리미야 리메이크', '여친, 빌리겠습니다', '남고생을 기르고 싶은',\
@@ -41,7 +43,5 @@ while True:
                 message = new + '가 업데이트 되었습니다.'
                 bot.sendMessage(chat_id=chat_id, text=message)
         last_file = new
-    else:
-      bot.sendMessage(chat_id=chat_id, text= '')
-      
+    
     time.sleep(10)
