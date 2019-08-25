@@ -41,4 +41,7 @@ while True:
                 message = new + '가 업데이트 되었습니다.'
                 bot.sendMessage(chat_id=chat_id, text=message)
         last_file = new
+    else:
+      bot.sendMessage(chat_id=chat_id, text= '')
+      
     time.sleep(10)
