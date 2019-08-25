@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import time, os
 import telegram
 import urllib.request
